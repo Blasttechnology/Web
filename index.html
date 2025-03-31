@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blast Technology | Consultoría</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body class="bg-slate-800 text-white font-sans">
+    <header>
+        <nav class="flex justify-between items-center p-4 bg-gray-950 bg-opacity-70 fixed w-full z-50">
+            <div class="flex items-center space-x-2">
+              <img src="logo.png" alt="Blast Technology Logo" class="w-10 h-10 rounded" />
+              <span class="text-2xl font-bold text-white">Blast Technology</span>
+            </div>
+            <ul class="hidden md:flex space-x-6 text-white">
+              <li><a href="#home" class="hover:text-yellow-400 transition">Inicio</a></li>
+              <li><a href="#servicios" class="hover:text-yellow-400 transition">Servicios</a></li>
+              <li><a href="#nosotros" class="hover:text-yellow-400 transition">Nosotros</a></li>
+              <li><a href="#contacto" class="hover:text-yellow-400 transition">Contacto</a></li>
+            </ul>
+        </nav>          
+
+      <section id="home" class="relative h-screen flex items-center justify-center">
+        <div class="absolute inset-0">
+          <img src="Fondo.png" alt="Blast Banner" class="w-full h-full object-cover opacity-70" />
+        </div>
+        <div class="relative z-10 text-center animate-on-scroll">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">Transformamos tu visión en soluciones tecnológicas reales.</h1>
+            <p class="text-lg md:text-xl">Desde la estrategia hasta la implementación, impulsamos tu crecimiento digital.</p>            
+        </div>
+      </section>
+    </header>
+
+    <main class="">
+        <section id="servicios" class="py-24 bg-[#edf2f7] text-gray-800">
+            <div class="max-w-6xl mx-auto px-6">
+              <h2 class="text-3xl font-bold text-center mb-12">Soluciones para tu Comercio</h2>
+          
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                  <img src="img/inventario.png" alt="Gestión de inventario" class="w-full h-36 object-cover rounded-lg mb-4">
+                  <h3 class="text-lg font-semibold mb-2">Stock en tiempo real</h3>
+                  <p class="text-gray-600 text-sm">Optimizá tus productos, evitá pérdidas y mantené el inventario actualizado con alertas inteligentes.</p>
+                </div>
+          
+                <!-- Card 2 -->
+                <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                  <img src="img/facturacion.jpg" alt="Facturación" class="w-full h-36 object-cover rounded-lg mb-4">
+                  <h3 class="text-lg font-semibold mb-2">Facturación Inteligente</h3>
+                  <p class="text-gray-600 text-sm">Comprobantes digitales, gestión de ingresos y reportes automáticos listos para AFIP.</p>
+                </div>
+          
+                <!-- Card 3 -->
+                <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                  <img src="img/Gestionempleado.jpg" alt="Empleados" class="w-full h-36 object-cover rounded-lg mb-4">
+                  <h3 class="text-lg font-semibold mb-2">Gestión de Empleados</h3>
+                  <p class="text-gray-600 text-sm">Controlá horarios, tareas y desempeño para mantener tu equipo eficiente y organizado.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          
+                                           
+          <section id="nosotros" class="py-24 bg-[#f0f4f8] text-gray-900">
+            <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+              <!-- Texto -->
+              <div>
+                <h2 class="text-3xl font-bold mb-4">Sobre Nosotros</h2>
+                <p class="mb-4">
+                  En <span class="text-blue-600 font-semibold">Blast Technology</span>, somos una consultora de prestigio con enfoque en tecnología moderna y transformación digital.
+                </p>
+                <p class="mb-4">
+                  Ayudamos a empresas a optimizar procesos, digitalizar su gestión y crecer con herramientas seguras, eficientes y personalizadas.
+                </p>
+                <p>Nuestro enfoque combina innovación, profesionalismo y cercanía.</p>
+              </div>
+              <!-- Imagen -->
+              <div>
+                <img src="img/equipoempresa.jpg" alt="Equipo de Blast Technology" class="rounded-lg shadow-lg w-full h-auto">
+              </div>
+            </div>
+          </section>
+                   
+          <section id="contacto" class="py-24 bg-[#e9eef4] text-gray-900">
+            <div class="max-w-3xl mx-auto px-6">
+              <h2 class="text-3xl font-bold text-center mb-8">Hablemos de tu proyecto</h2>
+              <form action="https://formspree.io/f/xjkyedjy" method="POST" class="grid grid-cols-1 gap-4">
+                <input type="text" name="nombre" placeholder="Nombre completo" required class="p-3 border border-gray-300 rounded" />
+                <input type="email" name="email" placeholder="Correo electrónico" required class="p-3 border border-gray-300 rounded" />
+                <input type="tel" name="telefono" placeholder="Número de teléfono" required class="p-3 border border-gray-300 rounded" />
+                <textarea name="mensaje" placeholder="¿Cómo podemos ayudarte? Contanos tu idea o proyecto..." required class="p-3 border border-gray-300 rounded h-32"></textarea>
+                <button type="submit" class="bg-blue-600 text-white py-3 rounded hover:bg-blue-700 transition">Enviar mensaje</button>
+              </form>
+              
+            </div>
+          </section>
+          
+          
+          
+    </main>
+
+    <footer class="bg-[#1e2a39] text-white px-6 py-10">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+      
+          <div>
+            <h3 class="text-lg font-semibold mb-2">Blast Technology</h3>
+            <p class="text-sm text-gray-400">
+              Consultora tecnológica especializada en soluciones para comercios, pymes y empresas que buscan crecer con innovación.
+            </p>
+          </div>
+      
+          <div>
+            <h3 class="text-lg font-semibold mb-2">Enlaces Rápidos</h3>
+            <ul class="text-sm text-gray-400 space-y-1">
+              <li><a href="#home" class="hover:text-white">Inicio</a></li>
+              <li><a href="#servicios" class="hover:text-white">Servicios</a></li>
+              <li><a href="#nosotros" class="hover:text-white">Sobre Nosotros</a></li>
+              <li><a href="#contacto" class="hover:text-white">Contacto</a></li>
+            </ul>
+          </div>
+      
+          <div>
+            <h3 class="text-lg font-semibold mb-2">Contacto</h3>
+            <p class="text-sm text-gray-400">Email: contacto@blasttech.com</p>
+            <p class="text-sm text-gray-400">Tel: +54 11 2345-6789</p>
+            <p class="text-sm text-gray-400">Ubicación: Buenos Aires, Argentina</p>
+          </div>
+      
+        </div>
+      
+        <div class="mt-10 border-t border-gray-700 pt-4 text-center text-sm text-gray-500">
+          &copy; 2025 Blast Technology. Todos los derechos reservados.
+        </div>
+      </footer>
+      
+  </body>
+</html>
